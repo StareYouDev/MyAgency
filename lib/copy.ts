@@ -39,10 +39,7 @@ export const process = {
     "We build it, we host it, we handle it. Our bulletproof, 6-step process gives you a site you can\u2019t wait to show off. All done in just two weeks, without the back-and-forth meetings.",
   annotation: ["All this in a", "2 week timeframe!"],
   pills: [
-    "Custom Designed. No Template",
-    "Live in 14 days. No Exceptions",
-    "Copy & Design by a Real Human",
-    "100% Money-Back Guarantee",
+    
   ],
 } as const;
 
