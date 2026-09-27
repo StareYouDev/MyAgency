@@ -1,0 +1,278 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* Ink — near blacks measured from the reference */
+  --ink: #131311;
+  --ink-800: #1c1d1a;
+  --ink-700: #2a2a27;
+  --ink-600: #41413f;
+  --ink-500: #6c6c6a;
+
+  /* Surfaces */
+  --paper: #fafafa; /* page background */
+  --cream: #f3f2ea; /* pricing / comparison light blocks */
+  --panel: #f4f4f4; /* timeline + footer blocks */
+  --card: #f2f2f2; /* polaroid + light solution cards */
+  --line: #dfdfdf;
+
+  /* Greys on dark */
+  --grey-400: #b9b9b7;
+  --grey-500: #969694;
+
+  /* Accents */
+  --mandarin: #ff8a24;
+  --mandarin-deep: #e56c00;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-800: var(--ink-800);
+  --color-ink-700: var(--ink-700);
+  --color-ink-600: var(--ink-600);
+  --color-ink-500: var(--ink-500);
+
+  --color-paper: var(--paper);
+  --color-cream: var(--cream);
+  --color-panel: var(--panel);
+  --color-card: var(--card);
+  --color-line: var(--line);
+
+  --color-grey-400: var(--grey-400);
+  --color-grey-500: var(--grey-500);
+
+  --color-lime: var(--mandarin);
+  --color-lime-deep: var(--mandarin-deep);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-display: var(--font-satoshi), "Satoshi", sans-serif;
+  --font-sans: var(--font-inter), "Inter", sans-serif;
+  --font-hand: var(--font-sedgwick), "Sedgwick Ave", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+/* ---------- Typography helpers ---------- */
+.font-display {
+  font-family: var(--font-satoshi), "Satoshi", sans-serif;
+}
+.font-hand {
+  font-family: var(--font-sedgwick), "Sedgwick Ave", cursive;
+}
+
+/* Display headings: Satoshi 900 with the reference's tight leading.
+   Kept in the components layer so Tailwind utilities (leading-*, text-*)
+   can still override individual properties. */
+@layer components {
+  .h-display {
+    font-family: var(--font-satoshi), "Satoshi", sans-serif;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+  }
+
+  .eyebrow {
+    font-family: var(--font-satoshi), "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+/* ---------- Signature hard-offset button ---------- */
+.btn-hard {
+  box-shadow: 4px 3px 0 0 var(--ink);
+  transition:
+    transform 0.16s cubic-bezier(0.34, 1.4, 0.64, 1),
+    box-shadow 0.16s ease;
+}
+.btn-hard:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 1px 0 0 var(--ink);
+}
+.btn-hard:active {
+  transform: translate(4px, 3px);
+  box-shadow: 0 0 0 0 var(--ink);
+}
+
+/* Card-level hard shadow used on solution / timeline / team cards */
+.shadow-hard {
+  box-shadow: 4px 4px 0 0 var(--ink);
+}
+.shadow-hard-sm {
+  box-shadow: 3px 3px 0 0 var(--ink);
+}
+
+/* Lime highlight block behind a word (e.g. "One", "Deserve") */
+.mark-lime {
+  background: var(--mandarin);
+  border-radius: 8px;
+  padding: 0 0.12em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* ---------- Word/char reveal primitives (Framer-style) ---------- */
+.reveal-word {
+  display: inline-block;
+  opacity: 0.001;
+  transform: translateY(15px);
+  will-change: transform, opacity;
+}
+.reveal-line {
+  opacity: 0.001;
+  transform: translateY(24px);
+  will-change: transform, opacity;
+}
+
+.sr-word,
+.sr-char,
+.sr-line {
+  will-change: transform, opacity;
+}
+
+/* ---------- Marquee ---------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+.marquee-lane {
+  overflow-x: clip;
+  position: relative;
+  display: flex;
+}
+
+/* ---------- Perpetual vertical checklist (Problem section) ---------- */
+@keyframes vscroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+.vscroll {
+  animation: vscroll 46s linear infinite;
+  will-change: transform;
+}
+.vscroll:hover {
+  animation-play-state: paused;
+}
+
+/* ---------- Speech-bubble chip ---------- */
+.chip-tail::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  bottom: -7px;
+  width: 14px;
+  height: 8px;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 18% 100%);
+}
+
+/* ---------- Accordion ---------- */
+@keyframes acc-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+@keyframes acc-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+/* ---------- Scrollbar ---------- */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: var(--mandarin);
+  color: var(--ink);
+}
+
+/* Reduced motion: everything visible, no animation */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  .reveal-word,
+  .reveal-line {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
