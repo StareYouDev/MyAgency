@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { Logo } from "@/components/brand/Logo";
-import { FramerMark } from "@/components/ui/icons";
-import { awardBadges, footer } from "@/lib/copy";
+import { footer } from "@/lib/copy";
 import { footerNav, footerResources } from "@/lib/content";
 
 function LinkedInIcon({ className }: { className?: string }) {
@@ -73,30 +71,9 @@ export function Footer() {
                 >
                   <LinkedInIcon className="h-[18px] w-[18px]" />
                 </a>
-                <a
-                  href="https://www.framer.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Framer"
-                  className="grid h-9 w-9 place-items-center rounded-[7px] border border-white/15 bg-ink-700 text-paper transition-colors hover:border-lime hover:text-lime focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime"
-                >
-                  <FramerMark className="h-[15px] w-auto" />
-                </a>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* ---- Award badges ---- */}
-        <div className="mt-14 flex lg:mt-20 lg:justify-end">
-          <Image
-            src={awardBadges}
-            alt="Awards and certifications"
-            width={274}
-            height={60}
-            unoptimized
-            className="h-auto w-[240px] opacity-90 sm:w-[274px]"
-          />
         </div>
 
         {/* ---- Bottom bar ---- */}
@@ -118,7 +95,6 @@ export function Footer() {
 
           <div className="flex items-center gap-4">
             <p className="font-display font-medium">{footer.crafted}</p>
-            <p className="font-display font-medium">{footer.powered}</p>
           </div>
         </div>
       </div>

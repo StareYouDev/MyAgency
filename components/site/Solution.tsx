@@ -38,7 +38,7 @@ function Card({ label, fill, index }: { label: string; fill: string; index: numb
 
 export function Solution() {
   return (
-    <section id="why-us" className="bg-paper px-4 py-16 sm:px-6 lg:px-10 lg:py-24">
+    <section id="solution" className="bg-paper px-4 py-16 sm:px-6 lg:px-10 lg:py-24">
       <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[minmax(0,1fr)_590px] lg:items-center lg:gap-16">
         {/* Left: heading + CTA */}
         <div>

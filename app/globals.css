@@ -104,6 +104,12 @@ body {
   overflow-x: clip;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .js .scroll-fade {
+    opacity: 0;
+  }
+}
+
 /* ---------- Typography helpers ---------- */
 .font-display {
   font-family: var(--font-satoshi), "Satoshi", sans-serif;

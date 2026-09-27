@@ -82,10 +82,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${satoshi.variable} ${inter.variable} ${sedgwick.variable} h-full antialiased`}
+      className={`${satoshi.variable} ${inter.variable} ${sedgwick.variable} h-full antialiased js`}
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">
+        <noscript>
+          <style>{".js .scroll-fade { opacity: 1 !important; }"}</style>
+        </noscript>
         {children}
         <script
           type="application/ld+json"

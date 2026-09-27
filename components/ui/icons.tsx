@@ -2,15 +2,6 @@ import type { SVGProps } from "react";
 
 type P = SVGProps<SVGSVGElement>;
 
-/** Framer wordmark glyph — path lifted verbatim from the reference. */
-export function FramerMark(props: P) {
-  return (
-    <svg viewBox="0 0 11 16" fill="currentColor" aria-hidden {...props}>
-      <path d="M0 0H10.6668V5.33319H5.3334L0 0ZM0 5.33319H5.3334L10.6668 10.6666H0V5.33319ZM0 10.6666H5.3334V16L0 10.6666Z" />
-    </svg>
-  );
-}
-
 /** The square arrow chip that sits inside every primary button. */
 export function ArrowChip({ className, invert = false }: { className?: string; invert?: boolean }) {
   return (

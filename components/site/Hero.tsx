@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { ScrollFade } from "@/components/motion/ScrollFade";
-import { ArrowChip, CheckCircle, FramerMark, ScribbleArrow } from "@/components/ui/icons";
+import { ArrowChip, CheckCircle, ScribbleArrow } from "@/components/ui/icons";
 import { hero, heroCards } from "@/lib/copy";
 import { heroImages } from "@/lib/content";
 
@@ -10,7 +10,6 @@ const cardImages: Record<string, string> = {
   "Afternoon Adventures": heroImages[0],
   "Clover Coach": heroImages[1],
   "Golden Hour": heroImages[2],
-  "Arx Crates": heroImages[3],
   "Winston Moore": heroImages[4],
 };
 
@@ -83,7 +82,6 @@ export function Hero() {
       <div className="relative z-10 mx-auto flex w-full max-w-[900px] flex-col items-center px-6 pb-16 pt-32 text-center sm:pb-20 sm:pt-36 lg:pb-[83px] lg:pt-[155px]">
         <ScrollFade y={14} delay={0.05}>
           <span className="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-1.5 font-display text-[12px] font-medium text-paper">
-            <FramerMark className="h-[13px] w-[9px]" />
             {hero.badge}
           </span>
         </ScrollFade>

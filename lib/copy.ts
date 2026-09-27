@@ -2,7 +2,7 @@
    Data arrays (checklist, faqs, stats, …) live in ./content.ts. */
 
 export const hero = {
-  badge: "Official Framer Expert",
+  badge: "Official StareYou Expert",
   eyebrow: "ONE Plan. ONE site. Done right.",
   heading: "Your Website, Handled.",
   description:
@@ -14,8 +14,7 @@ export const hero = {
 
 /** Rotated polaroid cards scattered around the hero, with their captions. */
 export const heroCards = [
-  { caption: "Arx Crates", left: "27.31%", top: "17%", rotate: 7, size: "sm" },
-  { caption: "Winston Moore", left: "11.32%", top: "48.65%", rotate: -11, size: "md" },
+  { caption: "Winston Moore", left: "11.32%", top: "40%", rotate: -11, size: "md" },
   { caption: "Golden Hour", left: "87.2%", top: "32.34%", rotate: 38, size: "lg" },
   { caption: "Afternoon Adventures", left: "23.88%", top: "80%", rotate: -33, size: "lg" },
   { caption: "Clover Coach", left: "84.62%", top: "80%", rotate: -14, size: "md" },
@@ -34,8 +33,8 @@ export const solution = {
 
 export const process = {
   eyebrow: "Backed by a studio who\u2019s served 160+ businesses globally",
-  headingA: "Meet Project",
-  headingMark: "One",
+  headingA: "Meet Stare",
+  headingMark: "You",
   description:
     "We build it, we host it, we handle it. Our bulletproof, 6-step process gives you a site you can\u2019t wait to show off. All done in just two weeks, without the back-and-forth meetings.",
   annotation: ["All this in a", "2 week timeframe!"],
@@ -63,14 +62,14 @@ export const pricing = {
   questionsLead: "Got Questions?",
   questionsLink: "Book a Call",
   includedTitle: "what\u2019s included:",
-  careLabel: "Framer Care+ Plan",
+  careLabel: "StareYou Care+ Plan",
   carePrice: "+$50",
   careCurrency: "USD",
   careCadence: "p/m",
   careBody:
     "Add at checkout. Get instant access to our dev team from day one of going live.",
   careNote:
-    "At the end of the payment cycle, it\u2019s your choice. Take ownership of your site and go. We\u2019ll transfer it to your Framer account, no questions asked. Or renew for another cycle, and we\u2019ll redesign and build your site from scratch. Your business will have grown. Your site should too.",
+    "At the end of the payment cycle, it\u2019s your choice. Take ownership of your site and go. We\u2019ll transfer it to your StareYou account, no questions asked. Or renew for another cycle, and we\u2019ll redesign and build your site from scratch. Your business will have grown. Your site should too.",
   workTitle: "See Work",
   workSub: "Live sites built by us, for people like you.",
 } as const;
@@ -96,10 +95,6 @@ export const pricingImages = [
 export const jamieAvatar =
   "https://framerusercontent.com/images/I6xkrOPsi1sACSuTbGin3CIQ41I.png";
 
-/** The four award badges rendered as one SVG in the footer. */
-export const awardBadges =
-  "https://framerusercontent.com/images/PO8ujJJVN3awV3yvWhMoXXMWq4.svg";
-
 export const comparison = {
   eyebrow: "Why partner with us?",
   heading: "The Smarter Way to Get Online.",
@@ -113,7 +108,7 @@ export const comparison = {
 export const trust = {
   eyebrow: "Transforming Brands Globally Since 2020",
   heading: "Why Trust Us with Your First Impression?",
-  body: "StareYou is a sub-brand of an award-winning design studio, KHULA\u00ae, founded by {Jamie Windell}. We\u2019ve worked with everyone from solo founders and small businesses, to organizations investing $100k+ in their online presence.",
+  body: "StareYou is an independent web design studio based in Casablanca, Morocco, founded by {Jamie Windell}. We\u2019ve worked with everyone from solo founders and small businesses, to organizations investing $100k+ in their online presence.",
 } as const;
 
 export const about = {
@@ -186,13 +181,12 @@ export const giving = {
 } as const;
 
 export const footer = {
-  blurbLead: "StareYou is a sub-brand of KHULA®",
-  blurb: "Proudly founded and based in Chilliwack, BC. Serving founders worldwide.",
+  blurbLead: "Independent web design studio",
+  blurb: "Proudly based in Casablanca, Morocco. Serving founders worldwide.",
   cta: "Reserve your spot",
   navTitle: "Navigation",
   socialsTitle: "Socials",
   copyright: "© 2026 StareYou. All Rights Reserved",
   resources: ["Privacy Policy", "Refund Policy", "Refer & Earn", "Resources"],
-  crafted: "Crafted with ❤️ in Framer",
-  powered: "Powered by KHULA®",
+  crafted: "Crafted with ❤️ in StareYou",
 } as const;

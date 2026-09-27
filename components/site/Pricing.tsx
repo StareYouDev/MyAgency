@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { ScrollFade } from "@/components/motion/ScrollFade";
-import { CheckCircle, FramerMark, InfoIcon } from "@/components/ui/icons";
+import { CheckCircle, InfoIcon } from "@/components/ui/icons";
 import { hero as heroCopy, pricing, currencies, prices, pricingImages } from "@/lib/copy";
 import { carePlusFeatures, includedFeatures, workProjects } from "@/lib/content";
 import { cn } from "@/lib/utils";
@@ -28,7 +28,7 @@ export function Pricing() {
   const [currency, setCurrency] = useState<string>("USD");
 
   return (
-    <section id="pricing" className="relative overflow-clip bg-ink-800">
+    <section className="relative overflow-clip bg-ink-800">
       {/* ---------------- Dark headline block ---------------- */}
       <div className="relative z-10 px-4 pb-[170px] pt-[136px] sm:px-6 lg:px-10 lg:pt-[150px]">
         <div className="relative mx-auto max-w-[1200px] text-center">
@@ -93,10 +93,9 @@ export function Pricing() {
         <div className="relative z-10 px-4 pb-24 pt-[150px] sm:px-6 lg:px-10 lg:pb-32">
           <div className="mx-auto max-w-[1200px]">
             {/* ---- Section head ---- */}
-            <div className="text-center">
+            <div id="pricing" className="scroll-mt-20 text-center">
               <ScrollFade y={14}>
                 <span className="inline-flex items-center gap-2 rounded-full border-[1.5px] border-ink bg-ink px-3.5 py-1.5 font-display text-[12px] font-bold text-paper">
-                  <FramerMark className="h-3 w-auto" />
                   {heroCopy.badge}
                 </span>
               </ScrollFade>

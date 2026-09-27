@@ -148,7 +148,7 @@ export const badgeMarquee = [
   "One Site",
   "Hosting included",
   "Senior Designers",
-  "framer experts",
+  "StareYou Experts",
   "one plan"
 ];
 
@@ -369,64 +369,20 @@ export const testimonials = [
 
 export const faqs = [
   {
-    "q": "Who is StareYou a good fit for?",
-    "a": "StareYou was built for founder-led, service-based business owners who need a professional online presence without the cost, complexity, or timeline of a traditional agency. If you run your business, deliver your own service, and need a website that works hard without requiring constant attention, this was made for you. StareYou is a great fit for: Professional Services: Coaches, consultants, fractional executives, fractional CFOs, fractional CMOs, business strategists, leadership coaches, life coaches, career coaches, executive coaches, and online educators. Trades and Home Services: Plumbers, electricians, HVAC technicians, roofers, painters, landscapers, pressure washing businesses, window cleaners, handymen, renovation contractors, and general contractors. Health, Wellness and Fitness: Personal trainers, yoga instructors, nutritionists, naturopaths, massage therapists, chiropractors, physiotherapists, estheticians, and wellness practitioners. Creative and Studio Professionals: Photographers, videographers, graphic designers, interior designers, florists, event planners, wedding planners, stylists, and music teachers. Real Estate and Finance: Realtors, mortgage brokers, financial advisors, insurance brokers, bookkeepers, and accountants. Legal and Professional Advisors: Paralegals, notaries, immigration consultants, HR consultants, and independent legal advisors. Marketing, Content and Digital: Copywriters, social media managers, brand strategists, SEO consultants, virtual assistants, and digital marketing freelancers. Local and Community Businesses: Cafes, boutique studios, dog groomers, pet sitters, tutors, driving instructors, cleaning companies, and any local business that relies on word of mouth and needs somewhere to send people online. If you are a solopreneur or a small team of one to five people delivering a service you are proud of, but your online presence does not yet reflect the quality of your work, StareYou was built for you. One focused, professionally designed page that tells your story, builds trust, and turns visitors into enquiries. No bloat. No guesswork. Just results."
+    "q": "What services do you offer?",
+    "a": "We help brands with strategy, branding, web design, landing pages, and growth-focused digital marketing."
   },
   {
-    "q": "Why do you build on Framer and not WordPress, Squarespace, or Webflow?",
-    "a": "Great question, and one worth answering properly because the platform we build on directly affects how fast your site loads, how good it looks, how easy it is to update, and how long it stays relevant. We build every StareYou site on Framer. Here is exactly why: Framer is built for design-first teams. Most website platforms were built for content management first and design second. Framer flips that. It was built by designers, for designers - which means the output looks and feels like a professionally crafted product, not a template with a logo dropped in. When your site needs to make a strong first impression in under three seconds, the design quality of your platform matters enormously. It is fast. Genuinely fast."
+    "q": "How long does a project take?",
+    "a": "Most projects take between 2 and 6 weeks, depending on scope and timeline."
   },
   {
-    "q": "Is it really monthly, or do I pay anything upfront?",
-    "a": "True monthly. You're not fronting a year of cost disguised as a \"monthly\" price. You pay in equal monthly installments over the term (~12 months), and hosting is included the whole time. No lump sum, no annual bill, no surprise upfront charge. At the end of the term you choose: refresh and keep going, or take ownership of the site and pay Framer hosting directly. Either way, the site is yours to keep. Built for founders who are still in build mode and want a proper site without an upfront investment cost."
+    "q": "Do you work with businesses that already have a brand?",
+    "a": "Yes. We can improve, refresh, or scale an existing brand without starting from scratch."
   },
   {
-    "q": "Is this actually custom or just a template?",
-    "a": "Fully custom. We design every site specifically for your business in Framer. We won’t retrofit a template to fit your unique business. The only thing consistent across sprints is our process. Everything else is custom-built for you."
-  },
-  {
-    "q": "How long does the process take?",
-    "a": "Your sprint will take around 14 working days from start to live site. Once you sign up, we’ll book your sprint for a time that suits you, and once the sprint starts, we’ll get to work, and you’ll get a new site."
-  },
-  {
-    "q": "When does the 2 week sprint start?",
-    "a": "Once you've signed up and reserved your spot, we'll be in touch to schedule a date that suits you. We book a minimum of 3 weeks in advance to give everybody time to prepare. But you can arrange a date beyond that if you like. We recommend choosing a period where you're less busy and have the capacity to respond."
-  },
-  {
-    "q": "Do you use AI to build the site?",
-    "a": "We use AI to help draft your website copy, using our proven StoryBrand storytelling framework. That draft is then edited and refined by our senior copywriter to make sure it sounds like you and meets your goals. The design is 100% human-made, custom, strategic, and built for your brand. While we use smart tools to move faster, we won’t use them to cut corners."
-  },
-  {
-    "q": "Do I need a logo before I book?",
-    "a": "A logo isn’t included in the sprint, but you don’t need to have one sorted to get started. If you already have one, bring it along. If you don’t, let us know when you book and we’ll point you in the right direction before your sprint week kicks off."
-  },
-  {
-    "q": "What if I don’t have photos or content ready?",
-    "a": "You don’t need to prepare anything. We write the copy using your onboarding form as a base. For photos, we’ll use your existing assets, handpicked stock imagery, or, if you're local (BC, Canada), we can discuss a custom photography shoot for real shots of you and your business."
-  },
-  {
-    "q": "What happens if I’m on the monthly plan and want to cancel?",
-    "a": "Your site goes offline until payments resume. Or you can buy out the remaining months at any point and we’ll transfer the site to you right away."
-  },
-  {
-    "q": "What does “one round of revisions” mean?",
-    "a": "After we’ve sent you your design and copy, you’ll have 2-3 days to review and send us all of your feedback, all at once. We action everything in one pass so that we’re not going back-and-forth for weeks and delaying your launch."
-  },
-  {
-    "q": "What’s the guarantee?",
-    "a": "If you’re not happy with the design direction, you get a full 100% refund. No questions, no hard feelings. We’d rather part ways cleanly than push through something that’s not working."
-  },
-  {
-    "q": "What’s the hosting situation after 12 months?",
-    "a": "During your 1-year contract with us, hosting is covered. At the end of your plan, we’ll transfer the site to your own Framer account and help you get set up. It’s easy, and takes about 5 minutes. Framer hosting runs around $10 USD/month billed annually."
-  },
-  {
-    "q": "Do I need a Framer account?",
-    "a": "Not to start. We build it in ours. When the sprint wraps or your 12 months are up, we transfer it over. The whole process is simple and takes about five minutes."
-  },
-  {
-    "q": "What if I need more than one page?",
-    "a": "StareYou is built for businesses that need a clean, focused single-page site - which is most of us, honestly. If you need a multi-page build, we do that too. Book a call here and we’ll scope it out."
+    "q": "How do I get started?",
+    "a": "Simply contact us, share your goals, and we’ll recommend the best next step for your business."
   }
 ];
 
