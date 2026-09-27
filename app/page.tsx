@@ -7,7 +7,7 @@ import { Pricing } from "@/components/site/Pricing";
 import { Comparison } from "@/components/site/Comparison";
 import { Trust } from "@/components/site/Trust";
 import { Faq } from "@/components/site/Faq";
-import { Giving } from "@/components/site/Giving";
+// import { Giving } from "@/components/site/Giving";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { faqs } from "@/lib/content";
@@ -37,7 +37,7 @@ export default function Home() {
         <Comparison />
         <Trust />
         <Faq />
-        <Giving />
+        {/* <Giving /> */}
         <Contact />
       </main>
       <Footer />

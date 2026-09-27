@@ -105,7 +105,7 @@ export const comparison = {
 export const trust = {
   eyebrow: "Transforming Brands Globally Since 2020",
   heading: "Why Trust Us with Your First Impression?",
-  body: "StareYou is an independent web design studio based in Casablanca, Morocco, founded by {Jamie Windell}. We\u2019ve worked with everyone from solo founders and small businesses, to organizations investing $100k+ in their online presence.",
+  body: "StareYou is an independent web design studio based in Casablanca, Morocco, founded by Firas Koutari and Khalid Lachguer. We\u2019ve worked with everyone from solo founders and small businesses, to organizations investing $100k+ in their online presence.",
 } as const;
 
 export const about = {

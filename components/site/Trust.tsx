@@ -6,7 +6,7 @@ import { ScrollFade } from "@/components/motion/ScrollFade";
 import { Counter } from "@/components/motion/Counter";
 import { ScribbleArrow } from "@/components/ui/icons";
 import { Testimonials } from "@/components/site/Testimonials";
-import { about, jamieAvatar, trust } from "@/lib/copy";
+import { about, trust } from "@/lib/copy";
 import { gallery, stats, team } from "@/lib/content";
 
 /** The 4x4 board: 8 gallery shots, 4 stat photos and 4 lime stat cards. */
@@ -73,19 +73,7 @@ export function Trust() {
 
           <ScrollFade y={18} className="lg:pt-[11px]">
             <p className="max-w-[484px] font-display text-[18px] font-bold leading-[27px] text-paper">
-              {trust.body.split("{Jamie Windell}")[0]}
-              <span className="inline-flex items-center gap-1.5 align-middle">
-                <Image
-                  src={jamieAvatar}
-                  alt="Jamie Windell"
-                  width={22}
-                  height={22}
-                  unoptimized
-                  className="h-[22px] w-[22px] rounded-full object-cover ring-1 ring-lime"
-                />
-                <span className="font-bold text-lime">Jamie Windell</span>
-              </span>
-              {trust.body.split("{Jamie Windell}")[1]}
+              {trust.body}
             </p>
           </ScrollFade>
         </div>
